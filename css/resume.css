@@ -3,10 +3,34 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
+:root {
+  --body-color: #868e96;
+  --heading-color: #343a40;
+  --bg-color: #fff;
+  --social-icon-color: #495057;
+  --primary-color: #1130c4;
+  --primary-hover: #0b1f7e;
+  --section-border: #dee2e6;
+  --nav-bg: #1130c4;
+  --profile-border: rgba(255, 255, 255, 0.2); }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-color: #b0b8c1;
+    --heading-color: #e1e4e8;
+    --bg-color: #1a1a2e;
+    --social-icon-color: #adb5bd;
+    --primary-color: #5b78f6;
+    --primary-hover: #8da0f8;
+    --section-border: #2d2d44;
+    --nav-bg: #0e1a5c;
+    --profile-border: rgba(255, 255, 255, 0.15); } }
+
 body {
   font-family: 'Open Sans', serif;
   padding-top: 54px;
-  color: #868e96; }
+  color: var(--body-color);
+  background-color: var(--bg-color); }
 
 @media (min-width: 992px) {
   body {
@@ -22,7 +46,7 @@ h6 {
   font-family: 'Saira Extra Condensed', serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40; }
+  color: var(--heading-color); }
 
 h1 {
   font-size: 6rem;
@@ -38,16 +62,16 @@ h2 {
   font-size: 1.35rem; }
 
 .list-social-icons a {
-  color: #495057; }
+  color: var(--social-icon-color); }
   .list-social-icons a:hover {
-    color: #1130c4; }
+    color: var(--primary-color); }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
 
 .list-icons {
   font-size: 3rem; }
   .list-icons .list-inline-item i:hover {
-    color: #1130c4; }
+    color: var(--primary-color); }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
@@ -70,7 +94,7 @@ h2 {
       #sideNav .navbar-brand .img-profile {
         max-width: 10rem;
         max-height: 10rem;
-        border: 0.5rem solid rgba(255, 255, 255, 0.2); }
+        border: 0.5rem solid var(--profile-border); }
     #sideNav .navbar-collapse {
       display: flex;
       align-items: flex-start;
@@ -86,7 +110,7 @@ h2 {
             display: block; } }
 
 section.resume-section {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--section-border);
   padding-top: 5rem !important;
   padding-bottom: 5rem !important; }
   section.resume-section .resume-item .resume-date {
@@ -104,12 +128,12 @@ section.resume-section {
     padding-bottom: 3rem !important; } }
 
 .bg-primary {
-  background-color: #1130c4 !important; }
+  background-color: var(--nav-bg) !important; }
 
 .text-primary {
-  color: #1130c4 !important; }
+  color: var(--primary-color) !important; }
 
 a {
-  color: #1130c4; }
+  color: var(--primary-color); }
   a:hover, a:focus, a:active {
-    color: #0b1f7e; }
+    color: var(--primary-hover); }
